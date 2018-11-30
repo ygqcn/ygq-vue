@@ -109,7 +109,6 @@ export default {
     }
   },
   methods: {
-    // 懒加载下拉选
     async createList (val) {
       if (val) {
         this.optionId = val[val.length - 1]

@@ -111,7 +111,7 @@ export default {
     // 懒加载下拉选
     async createList (val) {
       this.optionId = val[val.length - 1]
-      this.editData.parentId = this.optionId
+      this.editData.orgId = this.optionId
       let resp = await sysApi.queryOrgs(val[val.length - 1])
       if (resp.message.length > 0) {
         if (val.length === 1) {

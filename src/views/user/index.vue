@@ -1,7 +1,6 @@
 <template>
   <div>
-    <!--工具条-->
-    <section>
+    <el-row>
       <el-col :span="24" class="toolbar" style="padding-bottom: 0px;">
         <el-form :inline="true" :model="filters">
           <el-form-item>
@@ -33,7 +32,7 @@
           layout="prev, pager, next" :total="total" style="float:right;" @current-change="pageChange">
         </el-pagination>
       </div>
-    </section>
+    </el-row>
     <user-form :visible.sync="visible" :dialogStatus="dialogStatus" :title="title" @success="loadData"
                :editData="editData"></user-form>
   </div>
